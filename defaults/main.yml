@@ -4,7 +4,6 @@
 firefly_image: firefly:latest
 
 firefly_http_port_app: 30000
-firefly_http_port_importer: 30001
 
 firefly_timezone: "Europe/Brussels"
 
@@ -25,7 +24,6 @@ firefly_static_cron_token: "12345678901234567890123456789012"
 
 # Firefly paths
 firefly_root_path: /var/local
-firefly_data_base:  "{{ firefly_root_path }}/firefly"
 firefly_config_path: "{{ firefly_root_path }}/conf/firefly"
 
 # Add other paths here to make sure they're created automatically

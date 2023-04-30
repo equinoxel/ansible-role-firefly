@@ -10,9 +10,26 @@ None
 
 All variables are listed below (see also `defaults/main.yml`).
 
-```yml
----
-```
+| Name | Description | Default value |
+| --- | --- | --- |
+|`firefly_image: firefly`| Docker image to be used | latest |
+|`firefly_http_port_app`| Firefly application port|  30000 |
+|`firefly_timezone`| Timezone |  "Europe/Brussels" |
+| Map coordinates | |
+|`firefly_map_lat`| Latitude |  51.983333 |
+|`firefly_map_long`| Longitude |  5.916667 |
+|`firefly_map_zoom`| Zoom |  6 |
+| Application | |
+|`firefly_app_name`| Application name |  "Firefly III" |
+|`firefly_app_key`| Unique application key. Must be 32 chars long |  "12345678901234567890123456789012" |
+|`firefly_owner_email`| Owner email |  "user@domain.com" |
+| Database | |
+|`firefly_db_password`| Database password (note: MySQL backend) |  "changeme" |
+| Cron | |
+|`firefly_static_cron_token`| Cron token for firefly |  "12345678901234567890123456789012" |
+| Firefly paths | |
+|`firefly_root_path`| Default base for configuration |  /var/local |
+|`firefly_config_path`| Location of the configuration files|  "{{ firefly_root_path }}/conf/firefly" |
 
 ## Dependencies
 
@@ -23,7 +40,7 @@ You need a machine with docker and docker-compose installed.
 ```yml
 - hosts: servers
   roles:
-      - 'laurivan.Firefly'
+      - 'laurivan.firefly'
 ```
 
 ## License
