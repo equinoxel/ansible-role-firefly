@@ -1,0 +1,26 @@
+---
+
+galaxy_info:
+  author: Laur Ivan (laur.ivan@gmail.com)
+  namespace: laurivan
+  company: "N/A"
+  role_name: firefly
+  description: Firefly Role
+  min_ansible_version: "2.4"
+  min_ansible_container_version: "2.4"
+  license: MIT
+  galaxy_tags:
+    - firefly
+    - finance
+    - manager
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+        - jammy

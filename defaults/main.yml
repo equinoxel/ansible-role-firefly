@@ -1,0 +1,43 @@
+---
+
+## General
+firefly_image: firefly:latest
+
+firefly_http_port_app: 30000
+firefly_http_port_importer: 30001
+
+firefly_timezone: "Europe/Brussels"
+
+# Map coordinates
+firefly_map_lat: 51.983333
+firefly_map_long: 5.916667
+firefly_map_zoom: 6
+
+# App key must be 32 chars long
+firefly_app_key: "12345678901234567890123456789012"
+firefly_owner_email: "user@domain.com"
+
+firefly_db_password: "changeme"
+
+firefly_app_name: "Firefly III"
+# Cronjob token, must be 32 chars long
+firefly_static_cron_token: "12345678901234567890123456789012"
+
+# Firefly paths
+firefly_root_path: /var/local
+firefly_data_base:  "{{ firefly_root_path }}/firefly"
+firefly_config_path: "{{ firefly_root_path }}/conf/firefly"
+
+# Add other paths here to make sure they're created automatically
+#
+firefly_skeleton_paths:
+  - "{{ firefly_config_path }}"
+
+# Add more templates to be copied into the config
+firefly_configuration_files:
+  - "docker-compose.yml"
+  - "env.firefly.conf"
+  - "env.db.conf"
+
+# Documentation
+firefly_documentation_link: "https://www.laurivan.com"

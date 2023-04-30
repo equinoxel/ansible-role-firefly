@@ -1,0 +1,11 @@
+---
+
+- name: "FIREFLY | Configure"
+  ansible.builtin.import_tasks: config.yml
+  tags:
+    - firefly_configure
+
+- name: "FIREFLY | Install"
+  ansible.builtin.import_tasks: install.yml
+  tags:
+    - firefly_install

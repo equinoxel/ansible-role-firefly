@@ -1,0 +1,7 @@
+---
+- name: "FIREFLY | Ensure firefly is running"
+  community.docker.docker_compose:
+    project_src: "{{ firefly_config_path | expanduser | realpath }}"
+    build: false
+  tags:
+    - firefly_install

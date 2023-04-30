@@ -1,0 +1,23 @@
+---
+- name: "FIREFLY | Set up directories"
+  ansible.builtin.file:
+    state: directory
+    path: "{{ item }}"
+    owner: "{{ ansible_effective_user_id }}"
+    group: "{{ ansible_effective_group_id }}"
+    mode: "0750"
+  with_items:
+    - "{{ firefly_skeleton_paths }}"
+  tags:
+    - firefly_configure
+  become: true
+
+- name: "FIREFLY | Write configuration files"
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "{{ firefly_config_path | expanduser | realpath }}/{{ item }}"
+    mode: '0640'
+  with_items:
+    - "{{ firefly_configuration_files }}"
+  tags:
+    - firefly_configure

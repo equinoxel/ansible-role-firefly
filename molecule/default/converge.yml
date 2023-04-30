@@ -1,0 +1,5 @@
+---
+- name: Converge
+  hosts: firefly_group
+  roles:
+    - role: "laurivan.firefly"
