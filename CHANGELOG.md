@@ -1,18 +1,13 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [Unreleased](https://github.com/equinoxel/ansible-role-firefly/tree/develop)
-### Changed
-### Added
-### Removed
-### Fixed
+## 1.1.0 (2023-04-30)
 
-## [X.Y.Z](https://github.com/equinoxel/ansible-role-firefly/tree/X.Y.Z)
-### [Full Changelog](https://github.com/equinoxel/ansible-role-firefly/compare/1.0.0...X.Y.Z)
-### Changed
- *[#<issue_number>](https://github.com/equinoxel/ansible-role-firefly/issues/<issue_number>) \<Change description\>* @\<author\>
+
+### Bug Fixes
+
+* Molecule cleanup ([4f2aeb2](https://git.laurivan.com/Dev/ansible-role-firefly/commit/4f2aeb29d3e508023430189b29522e2314e2fe44))
 
 ## [1.0.0](https://github.com/equinoxel/ansible-role-firefly/tree/1.0.0)
 - Initial release
