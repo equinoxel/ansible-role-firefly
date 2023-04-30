@@ -3,6 +3,10 @@
   hosts: all
   gather_facts: true
   tasks:
+    - name: "Load the defaults"
+      ansible.builtin.include_vars:
+        dir: "../../defaults"
+        
     - name: Check if the docker-compose file exists.
       ansible.builtin.stat:
         path: "{{ firefly_config_path  | expanduser | realpath }}/docker-compose.yml"
