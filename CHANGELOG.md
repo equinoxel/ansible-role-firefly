@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v1.1.0...v1.1.1) (2023-04-30)
+
+
+### Bug Fixes
+
+* Fix reverse proxy ([176d6f5](https://git.laurivan.com/Dev/ansible-role-firefly/commit/176d6f59aaec15da8f507bea01ba8dd446ff5c11))
+
 ## 1.1.0 (2023-04-30)
 
 
