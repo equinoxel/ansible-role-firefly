@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v1.1.1...v1.1.2) (2023-05-12)
+
+
+### Bug Fixes
+
+* Restart cronjob on reboot. ([bb9c401](https://git.laurivan.com/Dev/ansible-role-firefly/commit/bb9c401379b685bc816fc124652cdd9d2e92a05a))
+
 ### [1.1.1](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v1.1.0...v1.1.1) (2023-04-30)
 
 
