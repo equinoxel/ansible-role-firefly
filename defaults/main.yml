@@ -1,9 +1,11 @@
 ---
 
 ## General
-firefly_image: firefly:latest
+firefly_image: "fireflyiii/core:latest"
+firefly_import_image: "fireflyiii/data-importer:latest"
 
 firefly_http_port_app: 30000
+firefly_http_port_import: 30001
 
 firefly_timezone: "Europe/Brussels"
 
@@ -19,6 +21,7 @@ firefly_owner_email: "user@domain.com"
 firefly_db_password: "changeme"
 
 firefly_app_name: "Firefly III"
+firefly_app_url: "http://10.0.0.35:30000"
 # Cronjob token, must be 32 chars long
 firefly_static_cron_token: "12345678901234567890123456789012"
 
@@ -36,6 +39,7 @@ firefly_configuration_files:
   - "docker-compose.yml"
   - "env.firefly.conf"
   - "env.db.conf"
+  - "env.firefly-import.conf"
 
 # Documentation
 firefly_documentation_link: "https://www.laurivan.com"
