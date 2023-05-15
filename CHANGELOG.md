@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v1.1.2...v2.0.0) (2023-05-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add importer.
+
+### Features
+
+* Add importer. ([6f731d3](https://git.laurivan.com/Dev/ansible-role-firefly/commit/6f731d3d9bb6d3940cfaca571e810f2ddfde7c30))
+
+
+### Bug Fixes
+
+* Use app key for firefly. ([5358e6f](https://git.laurivan.com/Dev/ansible-role-firefly/commit/5358e6f40aa760cda4ab43b7ad375db80f6bdb36))
+
 ### [1.1.2](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v1.1.1...v1.1.2) (2023-05-12)
 
 
