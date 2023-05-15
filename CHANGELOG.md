@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v2.0.0...v2.0.1) (2023-05-15)
+
+
+### Bug Fixes
+
+* Remove temp credential. ([40b3a7b](https://git.laurivan.com/Dev/ansible-role-firefly/commit/40b3a7b4c9089bbffbd0c9acf4b54826002169ce))
+
 ## [2.0.0](https://git.laurivan.com/Dev/ansible-role-firefly/compare/v1.1.2...v2.0.0) (2023-05-15)
 
 
